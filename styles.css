@@ -1,18 +1,23 @@
+* {
+    margin: 0;
+    padding: 0px;
+  }
+
 .grid{
 display: grid;
 height: 100vh;
 justify-items: stretch;
 grid-template: 
-"header header header header header header header header " 1fr
-"contAcc contAcc contAcc contAcc todo1 todo1 todo2 todo2" 6fr
-"middle middle middle middle middle middle middle middle" 1fr
+"header header header header header header header header " 0.7fr
+"contAcc contAcc contAcc contAcc todo1 todo1 todo2 todo2" 6.5fr
+"middle middle middle middle middle middle middle middle" 0.5fr
 "timer timer user user user user user user" 4fr
-"footer footer footer footer footer footer footer footer" 1fr
+"footer footer footer footer footer footer footer footer" 0.5fr
 }
 
-.body{
-    background-color: yellow;
-}
+body {
+    font-family:"Helvetica Neue"
+  }
 
 .header{
 background-color: orange;
@@ -25,7 +30,7 @@ grid-area: contAcc;
 display: grid;
 grid-template: 
 "date date date date" 1fr
-"time time time weather" 3.5fr
+"time time time weather" 3fr
 "quote quote quote quote" 1.5fr
 }
 
@@ -56,7 +61,7 @@ grid-area: todo1;
 }
 
 .todo2{
-    background-color: blue;
+    background-color: salmon;
     grid-area: todo2;
 }
 
