@@ -1,3 +1,6 @@
+## Stack
+Vanila JS / CSS / HTML
+
 ## BASIC FUNCTION
 - [x] Greeting User
 - [ ] Date
