@@ -1,6 +1,6 @@
 ## BASIC FUNCTION
 - [x] Greeting User
-- [x] Date
+- [ ] Date
 - [ ] Clock
 - [ ] Weather
 - [ ] Quotes
