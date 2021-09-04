@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0px;
+    text-transform: uppercase;
   }
 
 .grid{
@@ -97,4 +98,18 @@ grid-area: todo1;
 .footer{
 background-color: mediumslateblue;
 grid-area: footer;
+}
+
+
+.hidden{
+    display: none;;
+}
+
+#greeting{
+    font-size: 2em;
+}
+
+#name{
+    font-size: 20em;
+    font-weight: bold;
 }
