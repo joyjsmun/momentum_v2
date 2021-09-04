@@ -1,5 +1,8 @@
+## Stack
+Vanila JS / CSS / HTML
+
 ## BASIC FUNCTION
-- [ ] Greeting User
+- [x] Greeting User
 - [ ] Date
 - [ ] Clock
 - [ ] Weather
