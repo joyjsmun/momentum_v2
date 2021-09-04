@@ -1,0 +1,95 @@
+.grid{
+display: grid;
+height: 100vh;
+justify-items: stretch;
+grid-template: 
+"header header header header header header header header " 1fr
+"contAcc contAcc contAcc contAcc todo1 todo1 todo2 todo2" 6fr
+"middle middle middle middle middle middle middle middle" 1fr
+"timer timer user user user user user user" 4fr
+"footer footer footer footer footer footer footer footer" 1fr
+}
+
+.body{
+    background-color: yellow;
+}
+
+.header{
+background-color: orange;
+grid-area: header;
+}
+
+.contAcc{
+background-color: teal;
+grid-area: contAcc;
+display: grid;
+grid-template: 
+"date date date date" 1fr
+"time time time weather" 3.5fr
+"quote quote quote quote" 1.5fr
+}
+
+.date{
+background-color: tomato;
+grid-area: date;
+
+}
+
+.time{
+background-color: yellowgreen;
+grid-area: time;
+}
+
+.weather{
+background-color: green;
+grid-area: weather;
+}
+
+.quote{
+    background-color: skyblue;
+    grid-area: quote;
+}
+
+.todo1{
+background-color: plum;
+grid-area: todo1;
+}
+
+.todo2{
+    background-color: blue;
+    grid-area: todo2;
+}
+
+.middle{
+    background-color: crimson;
+    grid-area: middle;
+}
+
+.timer{
+    background-color: midnightblue;
+    grid-area: timer;
+    display: grid;
+    grid-template: 
+    "timerButton" 1fr
+    "clock" 4fr
+}
+
+.timerButton{
+    background-color: mistyrose;
+    grid-area: timerButton;
+}
+
+.clock{
+    background-color: yellow;
+    grid-area: clock;
+}
+
+.user{
+    background-color: mediumspringgreen;
+    grid-area: user;
+}
+
+.footer{
+background-color: mediumslateblue;
+grid-area: footer;
+}
