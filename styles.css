@@ -115,7 +115,7 @@ grid-area: footer;
 
 #greeting{
     font-size: 2em;
-    padding: 50px;
+    /* padding: 50px; */
     font-weight: 500;
     grid-area: greeting;
 

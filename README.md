@@ -4,7 +4,7 @@ Vanila JS / CSS / HTML
 ## BASIC FUNCTION
 - [x] Greeting User
 - [ ] Date
-- [ ] Clock
+- [x] Clock
 - [ ] Weather
 - [ ] Quotes
 - [ ] Todo : Today
