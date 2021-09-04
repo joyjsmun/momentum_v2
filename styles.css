@@ -1,19 +1,20 @@
 * {
     margin: 0;
-    padding: 0px;
     text-transform: uppercase;
+    text-decoration: none;
   }
 
 .grid{
+padding: 10px;
 display: grid;
-height: 100vh;
+height: 98vh;
 justify-items: stretch;
 grid-template: 
-"header header header header header header header header " 0.7fr
-"contAcc contAcc contAcc contAcc todo1 todo1 todo2 todo2" 6.5fr
+"header header header header header header header header " 1fr
+"contAcc contAcc contAcc contAcc todo1 todo1 todo2 todo2" 6fr
 "middle middle middle middle middle middle middle middle" 0.5fr
 "timer timer user user user user user user" 4fr
-"footer footer footer footer footer footer footer footer" 0.5fr
+"footer footer footer footer footer footer footer footer" 1fr
 }
 
 body {
@@ -32,7 +33,7 @@ display: grid;
 grid-template: 
 "date date date date" 1fr
 "time time time weather" 3fr
-"quote quote quote quote" 1.5fr
+"quote quote quote quote" 1.2fr
 }
 
 .date{
@@ -102,14 +103,34 @@ grid-area: footer;
 
 
 .hidden{
-    display: none;;
+    display: none;
+}
+
+#greetingForm{
+    /* display: grid;
+    grid-template:
+    "greeting greeting name name name name name"  */
+   
 }
 
 #greeting{
     font-size: 2em;
+    padding: 50px;
+    font-weight: 500;
+    grid-area: greeting;
+
 }
 
 #name{
     font-size: 20em;
     font-weight: bold;
+    grid-area: name;
+}
+
+#userForm input[type="text"], textarea{
+    background-color: none;
+    font-size:3.5em;
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid red;
 }
