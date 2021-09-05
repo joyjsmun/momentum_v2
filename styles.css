@@ -11,7 +11,7 @@ height: 98vh;
 justify-items: stretch;
 grid-template: 
 "header header header header header header header header " 1fr
-"contAcc contAcc contAcc contAcc todo1 todo1 todo2 todo2" 6fr
+"contAcc contAcc contAcc todo1 todo1 todo1 todo2 todo2" 6fr
 "middle middle middle middle middle middle middle middle" 0.5fr
 "timer timer user user user user user user" 4fr
 "footer footer footer footer footer footer footer footer" 1fr
@@ -49,12 +49,13 @@ background-color: yellowgreen;
 grid-area: time;
 font-size: 8em;
 font-weight: 500;
+margin-right: -1em;
 }
 
 .weather{
-background-color: #008000;
+background-color:whitesmoke;
 grid-area: weather;
-color: white;
+
 }
 
 .quote{
@@ -138,4 +139,9 @@ grid-area: footer;
     width: 90%;
     border: none;
     border-bottom: 2px solid red;
+}
+
+#weather-icon{
+    font-size: 8em;
+    text-align: center;
 }
