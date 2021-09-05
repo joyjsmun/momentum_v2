@@ -2,23 +2,26 @@
     margin: 0;
     text-transform: uppercase;
     text-decoration: none;
+    padding-left: 1vw;
   }
 
 .grid{
 padding: 10px;
+background-color: rgb(248, 248, 237);
 display: grid;
 height: 98vh;
 justify-items: stretch;
 grid-template: 
-"header header header header header header header header " 1fr
+"header header header header header header header header " 0.8fr
 "contAcc contAcc contAcc todo1 todo1 todo1 todo2 todo2" 6fr
 "middle middle middle middle middle middle middle middle" 0.5fr
-"timer timer user user user user user user" 4fr
+"timer timer user user user user user user" 3.5fr
 "footer footer footer footer footer footer footer footer" 1fr
 }
 
 body {
-    font-family:"Helvetica Neue"
+    font-family:"Helvetica Neue";
+    
   }
 
 .header{
@@ -55,7 +58,7 @@ margin-right: -2vw;
 }
 
 .weather{
-background-color:black;
+/* background-color:black; */
 grid-area: weather;
 color: whitesmoke;
 
@@ -71,6 +74,7 @@ color: whitesmoke;
     display: flex;
     align-items: center;
     font-size: 1.1vw;
+    text-transform: none;
 }
 
 .todo1{
@@ -89,10 +93,10 @@ border-left: black 1.5px solid;
     /* background-color: crimson; */
     grid-area: middle;
     border-top: black 1.5px solid;
+    height:4vh;
 }
 
 .timer{
-    background-color: midnightblue;
     grid-area: timer;
     display: grid;
     grid-template: 
@@ -113,6 +117,7 @@ border-left: black 1.5px solid;
 .user{
     /* background-color: mediumspringgreen; */
     grid-area: user;
+    
 }
 
 .footer{
@@ -141,9 +146,11 @@ grid-area: footer;
 }
 
 #name{
-    font-size: 20vw;
+    font-size: 25vh;
     font-weight: bold;
     grid-area: name;
+    padding-left: 10vw;
+    margin-top: -1vh;
 }
 
 #userForm input[type="text"], textarea{
