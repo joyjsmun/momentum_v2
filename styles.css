@@ -52,8 +52,9 @@ font-weight: 500;
 }
 
 .weather{
-background-color: green;
+background-color: #008000;
 grid-area: weather;
+color: white;
 }
 
 .quote{
