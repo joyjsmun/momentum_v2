@@ -33,7 +33,7 @@ display: grid;
 grid-template: 
 "today today today today" 1fr
 "time time time weather" 3fr
-"quote quote quote quote" 1.2fr
+"quoteContainer quoteContainer quoteContainer quoteContainer" 1fr
 }
 
 .today{
@@ -41,7 +41,8 @@ grid-template:
 grid-area: today;
 font-size: 2vw;
 font-weight: 500;
-
+display: flex;
+align-items: center;
 
 }
 
@@ -64,9 +65,12 @@ color: whitesmoke;
     font-size: 1.5em;
 }
 
-.quote{
-    background-color: skyblue;
-    grid-area: quote;
+.quoteContainer{
+    /* background-color: skyblue; */
+    grid-area: quoteContainer;
+    display: flex;
+    align-items: center;
+    font-size: 1.1vw;
 }
 
 .todo1{
