@@ -47,6 +47,8 @@ font-weight: 500;
 .time{
 background-color: yellowgreen;
 grid-area: time;
+font-size: 8em;
+font-weight: 500;
 }
 
 .weather{

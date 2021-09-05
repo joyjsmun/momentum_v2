@@ -15,12 +15,15 @@ function todayHandler(){
 } 
 
     
-
-
 function timeHandler(){
-    const getNow = Date.now();
+    const getNow = new Date()
+    const hour = String(getNow.getHours()).padStart("2",0);
+    const mins = String(getNow.getMinutes()).padStart("2",0);
+    time.innerText = `${hour}:${mins}`;
 
 }
 
 todayHandler();
+timeHandler();
+
 setInterval(timeHandler,"1000");
