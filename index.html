@@ -22,8 +22,15 @@
                 <span id="author"></span>
             </div>
         </div>
-        <div class="todo1">Today</div>
-        <div class="todo2">This Week</div>
+        <div class="todo1Container">
+            <form class="todoForm">
+                <input class="todoInput" type="text" placeholder="Type Your Todo!"/>
+            </form>
+            <div class="hidden" id="todayTodo">
+                <ul class="todoList"></ul>
+            </div>
+        </div>
+        <div class="todo2"></div>
         <div class="middle"></div>
         <div class="timer">
             <div class="timerButton">Start Timer</div>
@@ -45,6 +52,7 @@
     <script src="src/clock.js"></script>
     <script src="src/weather.js"></script>
     <script src="src/quotes.js"></script>
+    <script src="src/todo.js"></script>
 
 
 </body>

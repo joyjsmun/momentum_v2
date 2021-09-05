@@ -22,7 +22,8 @@ function sucess(myPosition){
             const weather = new Array();
             weather["Clear"] = "☀️";
             weather["Clouds"] = "☁️";
-            weather["Rain"] = "🌦";
+            weather["Rain"] = "🌧";
+            weather["Drizzle"] = "🌦";
             console.log(weather["clear"]);
             console.log(mainWeather);
             weatherIcon.innerText = weather[mainWeather]

@@ -5,6 +5,11 @@
     padding-left: 1vw;
   }
 
+
+  #hidden{
+      display: none;
+  }
+
 .grid{
 padding: 10px;
 background-color: rgb(248, 248, 237);
@@ -13,7 +18,7 @@ height: 98vh;
 justify-items: stretch;
 grid-template: 
 "header header header header header header header header " 0.8fr
-"contAcc contAcc contAcc todo1 todo1 todo1 todo2 todo2" 6fr
+"contAcc contAcc contAcc todo1Container todo1Container todo1Container todo2 todo2" 6fr
 "middle middle middle middle middle middle middle middle" 0.5fr
 "timer timer user user user user user user" 3.5fr
 "footer footer footer footer footer footer footer footer" 1fr
@@ -35,7 +40,7 @@ grid-area: contAcc;
 display: grid;
 grid-template: 
 "today today today today" 1fr
-"time time time weather" 3fr
+"time time weather weather" 3fr
 "quoteContainer quoteContainer quoteContainer quoteContainer" 1fr
 }
 
@@ -54,7 +59,7 @@ align-items: center;
 grid-area: time;
 font-size: 9vw;
 font-weight: 500;
-margin-right: -2vw;
+margin-right: -10vw;
 }
 
 .weather{
@@ -77,9 +82,9 @@ color: whitesmoke;
     text-transform: none;
 }
 
-.todo1{
+.todo1Container{
 background-color: plum;
-grid-area: todo1;
+grid-area: todo1Container;
 border-left: black 1.5px solid;
 }
 
