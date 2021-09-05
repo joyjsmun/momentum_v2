@@ -1,7 +1,26 @@
-const time = document.querySelector("#time");
+
+const today = document.querySelector(".today");
+const time = document.querySelector(".time");
+
+
+function todayHandler(){
+    const getToday = new Date();
+    const year = getToday.getFullYear();
+    const month = String(getToday.getMonth()+1).padStart("2",0);
+    const day = String(getToday.getDay()+1).padStart("2",0);
+    //const date = now.getDate();
+
+    today.innerText =`${year}.${month}.${day}`;
+  
+} 
+
+    
+
 
 function timeHandler(){
-    console.log("working")
+    const getNow = Date.now();
+
 }
 
-setInterval("1000",timeHandler)
+todayHandler();
+setInterval(timeHandler,"1000");

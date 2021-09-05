@@ -31,14 +31,16 @@ background-color: teal;
 grid-area: contAcc;
 display: grid;
 grid-template: 
-"date date date date" 1fr
+"today today today today" 1fr
 "time time time weather" 3fr
 "quote quote quote quote" 1.2fr
 }
 
-.date{
+.today{
 background-color: tomato;
-grid-area: date;
+grid-area: today;
+font-size: 2em;
+font-weight: 500;
 
 }
 
@@ -128,7 +130,7 @@ grid-area: footer;
 }
 
 #userForm input[type="text"], textarea{
-    background-color: none;
+    background-color: yellow;
     font-size:3.5em;
     width: 90%;
     border: none;

@@ -3,7 +3,7 @@ Vanila JS / CSS / HTML
 
 ## BASIC FUNCTION
 - [x] Greeting User
-- [ ] Date
+- [x] Date
 - [x] Clock
 - [ ] Weather
 - [ ] Quotes
