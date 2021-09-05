@@ -5,7 +5,7 @@ Vanila JS / CSS / HTML
 - [x] Greeting User
 - [x] Date
 - [x] Clock
-- [ ] Weather
+- [x] Weather
 - [ ] Quotes
 - [ ] Todo : Today
 - [ ] Todo : This Week
