@@ -2,25 +2,30 @@ const todoForm = document.querySelector(".todoForm");
 const todoInput = document.querySelector(".todoInput");
 const todoList = document.querySelector(".todoList");
 
-const todos = [];
+let todos = [];
 
-function saveTodo(todo){
-    todos.push(todo);
-    localStorage.setItem("todos",todos)
+function deleteHandler(event){
+    const li = event.target.parentElement;
+    li.remove();
+    console.dir(event.target);
 }
 
+function saveTodo(){
+    localStorage.setItem("todos",JSON.stringify(todos));
+}
 
-function paintTodo(todo){
+function paintTodo(todoObj){
     todayTodo.classList.remove("hidden");
-    //todoForm.classList.add("hidden");
     const li = document.createElement("li");
+    li.id = todoObj.id;
     const span = document.createElement("span");
     const button = document.createElement("button");
     todoList.appendChild(li);
-    li.innerText = todo;
     li.appendChild(span);
-    span.innerText = "✅";
+    li.appendChild(button);
+    span.innerText = todoObj.todo;
     button.innerText ="❎";
+    button.addEventListener("click",deleteHandler)
     
 }
 
@@ -28,9 +33,26 @@ function todoHandler(event){
     event.preventDefault();
     const todo = todoInput.value;
     todoInput.value = "";
-    paintTodo(todo);
-    saveTodo(todo);
-    console.log(todo);
+    const todoObj = {
+        todo : todo,
+        id : Date.now()
+    }
+    todos.push(todoObj);
+    paintTodo(todoObj);
+    saveTodo();
+}
+
+const savedTodo = localStorage.getItem("todos");
+
+if(savedTodo !== null){
+    const parsedTodo = JSON.parse(savedTodo);
+    todos = parsedTodo;
+    console.log(parsedTodo);
+    parsedTodo.forEach(paintTodo);
+
 }
 
 todoForm.addEventListener("submit",todoHandler);
+
+
+
