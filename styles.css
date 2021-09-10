@@ -83,7 +83,7 @@ color: whitesmoke;
 }
 
 .todo1Container{
-background-color: plum;
+/* background-color: plum; */
 grid-area: todo1Container;
 border-left: black 1.5px solid;
 }

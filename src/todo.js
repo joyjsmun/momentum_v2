@@ -6,6 +6,12 @@ let todos = [];
 
 function deleteHandler(event){
     const li = event.target.parentElement;
+    const selectedId = li.id;
+    console.log(typeof selectedId);
+    if(selectedId){
+        console.log("id:",selectedId)
+    }
+ 
     li.remove();
     console.dir(event.target);
 }
