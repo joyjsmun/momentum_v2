@@ -8,7 +8,6 @@ function deleteHandler(event){
     const li = event.target.parentElement;
     li.remove();
     todos = todos.filter((x) => x.id !== parseInt(li.id))
-
     saveTodo();
 }
 
