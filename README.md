@@ -6,7 +6,7 @@ Vanila JS / CSS / HTML
 - [x] Date
 - [x] Clock
 - [x] Weather
-- [ ] Quotes
+- [x] Quotes
 - [ ] Todo : Today
 - [ ] Todo : This Week
 
