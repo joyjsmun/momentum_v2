@@ -3,11 +3,29 @@ const todoInput = document.querySelector(".todoInput");
 const todoList = document.querySelector(".todoList");
 
 let todos = [];
+let nextTodos = [];
 
 
 // 3- 4시간 확보
 // 스스로 스트레스 주지않기 / 인정해주기 
 // 오늘 - JS 디플로이 / 레이아웃 1개 진행 / 주당 1개999
+
+function nextHandler(event){
+const li = event.target.parentElement;
+li.remove();
+paintNextTodo(event.target.value);
+saveNextTodo();
+}
+
+function paintNextTodo(nextTodo){
+    
+}
+
+
+function saveNextTodo(){
+    localStorage.setItem("nextTodos",)
+}
+
 
 
 

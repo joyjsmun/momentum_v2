@@ -88,8 +88,8 @@ grid-area: todo1Container;
 border-left: black 1.5px solid;
 }
 
-.todo2{
-    background-color: salmon;
+.todo2Container{
+    /* background-color: salmon; */
     grid-area: todo2;
     border-left: black 1.5px solid;
 }
