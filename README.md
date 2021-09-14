@@ -6,9 +6,11 @@ Vanila JS / CSS / HTML
 - [x] Date
 - [x] Clock
 - [x] Weather
-- [ ] Quotes
-- [ ] Todo : Today
+- [x] Quotes
+- [x] Todo : Today
 - [ ] Todo : This Week
+- [ ] Frontend CSS 
+- [ ] Deploy
 
 
 ## EXTRA FUNCTION

@@ -13,14 +13,9 @@ let todos = [];
 
 function deleteHandler(event){
     const li = event.target.parentElement;
-    const selectedId = li.id;
-    console.log(typeof selectedId);
-    if(selectedId){
-       
-    }
- 
     li.remove();
-    console.dir(event.target);
+    todos = todos.filter((x) => x.id !== parseInt(li.id))
+    saveTodo();
 }
 
 function saveTodo(){
@@ -32,13 +27,17 @@ function paintTodo(todoObj){
     const li = document.createElement("li");
     li.id = todoObj.id;
     const span = document.createElement("span");
-    const button = document.createElement("button");
+    const delButton = document.createElement("button");
+    const nextButton = document.createElement("button");
     todoList.appendChild(li);
     li.appendChild(span);
-    li.appendChild(button);
+    li.appendChild(nextButton);
+    li.appendChild(delButton);
     span.innerText = todoObj.todo;
-    button.innerText ="❎";
-    button.addEventListener("click",deleteHandler)
+    nextButton.innerText="✅"
+    delButton.innerText ="❎";
+    nextButton.addEventListener("click",nextHandler);
+    delButton.addEventListener("click",deleteHandler);
     
 }
 
