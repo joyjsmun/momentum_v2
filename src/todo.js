@@ -12,13 +12,28 @@ let nextTodos = [];
 
 function nextHandler(event){
 const li = event.target.parentElement;
+const value = event.target.value;
 li.remove();
-paintNextTodo(event.target.value);
+paintNextTodo(value);
 saveNextTodo();
 }
 
 function paintNextTodo(nextTodo){
-    
+    nextTodo.classList.remove("hidden");
+
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    const delButton = document.createElement("button");
+    const backButton = document.createElement("button");
+    span.innerText = nextTodo;
+    delButton.innerText = "❎";
+    backButton.innerText="◀️";
+    li.appendChild(span);
+    span.appendChild(backButton);
+    span.appendChild(delButton);
+    delButton.addEventListener("click",deleteHandler);
+    backButton.addEventListener("click",backHanlder);
+
 }
 
 
@@ -26,6 +41,11 @@ function saveNextTodo(){
     localStorage.setItem("nextTodos",)
 }
 
+function backHanlder(){
+    const li = event.target.parentElement;
+    li.remove();
+
+}
 
 
 
